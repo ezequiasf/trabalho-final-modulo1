@@ -10,6 +10,8 @@ public class OperacoesReceita {
 
     public boolean cadastrarReceita(Integer id, String nomeReceita, TipoReceita tipo, String modoPreparo,
             Ingrediente... ingredientes) {
+        
+
        // Receita receita = new Receita(id, nomeReceita, tipo, modoPreparo, ingredientes);
         return true;
     }
