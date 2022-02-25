@@ -20,24 +20,15 @@ public class Receita {
         ingredientes = new ArrayList<>();
     }
     
-    public Receita(String nomeReceita, TipoReceita tipoReceita, String modoPreparo,
-    Ingrediente... ingredientes) {
-        this.nomeReceita = nomeReceita;
-        this.tipoReceita = tipoReceita;
-        this.ingredientes = new ArrayList<>();
-        this.setIngredientes(ingredientes);
-        this.modoPreparo = modoPreparo;
-    }
-
     public Receita(String nomeReceita, TipoReceita tipoReceita, Double mediaPreco,
-            String modoPreparo, Integer tempoPreparo,Ingrediente ingrediente) {
+            String modoPreparo, Integer tempoPreparo,Ingrediente... ingrediente) {
         this.nomeReceita = nomeReceita;
         this.tipoReceita = tipoReceita;
-        this.ingredientes = new ArrayList<>();
-        this.setIngredientes(ingrediente);
         this.modoPreparo = modoPreparo;
         this.tempoPreparo = tempoPreparo;
         this.mediaPreco = mediaPreco;
+        this.ingredientes = new ArrayList<>();
+        this.setIngredientes(ingrediente);
     }
 
     public List<Ingrediente> getIngredientes() {
@@ -55,7 +46,6 @@ public class Receita {
     public Integer getId() {
         return id;
     }
-
 
     public void setId(Integer id) {
         this.id = id;
@@ -111,13 +101,13 @@ public class Receita {
     public String toString() {
 
         if ((this.getMediaPreco()==null)||(this.getTempoPreparo()==null)){
-            return String.format("%s%nIngredientes:"+
-            "%sModo de preparo:%n%s", this.getNomeReceita(),impressaoIngredientes(), 
+            return String.format("==============%nId:%d%n%s%nIngredientes:"+
+            "%sModo de preparo:%n%s%n===============%n",this.getId(), this.getNomeReceita(),impressaoIngredientes(), 
             this.getModoPreparo());
         }
 
-        return String.format("%s | Tempo de preparo:%d | Média de preço:%.2f%nIngredientes:"+
-        "%sModo de preparo:%n%s", this.getNomeReceita(), this.getTempoPreparo(), 
+        return String.format("==============%n%s Id: %d | Tempo de preparo:%d | Média de preço:%.2f%nIngredientes:"+
+        "%sModo de preparo:%n%s%n==============%n", this.getNomeReceita(),this.getId(), this.getTempoPreparo(), 
         this.getMediaPreco(),impressaoIngredientes(), this.getModoPreparo());
     }
 
