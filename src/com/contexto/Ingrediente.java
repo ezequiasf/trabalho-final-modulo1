@@ -1,10 +1,13 @@
-package com.company;
-
-import java.util.List;
+package com.contexto;
 
 public class Ingrediente {
     private String nome;
     private String quantidade;
+
+    public Ingrediente(String nome, String quantidade) {
+        this.nome = nome;
+        this.quantidade = quantidade;
+    }
 
     public String getNome() {
         return nome;
@@ -24,9 +27,6 @@ public class Ingrediente {
 
     @Override
     public String toString() {
-        return "Ingrediente{" +
-                "nome='" + nome + '\'' +
-                ", quantidade='" + quantidade + '\'' +
-                '}';
+        return this.getNome()+"-"+this.getQuantidade();
     }
 }
