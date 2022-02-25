@@ -16,10 +16,12 @@ public class Receita {
     private Integer tempoPreparo;
     private Double mediaPreco;
 
+    public Receita(){
+        ingredientes = new ArrayList<>();
+    }
     
-    public Receita(Integer id, String nomeReceita, TipoReceita tipoReceita, String modoPreparo,
+    public Receita(String nomeReceita, TipoReceita tipoReceita, String modoPreparo,
     Ingrediente... ingredientes) {
-        this.id = id;
         this.nomeReceita = nomeReceita;
         this.tipoReceita = tipoReceita;
         this.ingredientes = new ArrayList<>();
@@ -27,13 +29,12 @@ public class Receita {
         this.modoPreparo = modoPreparo;
     }
 
-    public Receita(Integer id, String nomeReceita, TipoReceita tipoReceita, Double mediaPreco,
-            String modoPreparo, Integer tempoPreparo,Ingrediente... ingredientes) {
-        this.id = id;
+    public Receita(String nomeReceita, TipoReceita tipoReceita, Double mediaPreco,
+            String modoPreparo, Integer tempoPreparo,Ingrediente ingrediente) {
         this.nomeReceita = nomeReceita;
         this.tipoReceita = tipoReceita;
         this.ingredientes = new ArrayList<>();
-        this.setIngredientes(ingredientes);
+        this.setIngredientes(ingrediente);
         this.modoPreparo = modoPreparo;
         this.tempoPreparo = tempoPreparo;
         this.mediaPreco = mediaPreco;
@@ -54,6 +55,7 @@ public class Receita {
     public Integer getId() {
         return id;
     }
+
 
     public void setId(Integer id) {
         this.id = id;
@@ -118,4 +120,5 @@ public class Receita {
         "%sModo de preparo:%n%s", this.getNomeReceita(), this.getTempoPreparo(), 
         this.getMediaPreco(),impressaoIngredientes(), this.getModoPreparo());
     }
+
 }
