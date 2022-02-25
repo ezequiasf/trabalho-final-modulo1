@@ -2,9 +2,10 @@ package com.dao;
 
 import java.util.List;
 
-import com.contexto.Ingrediente;
 import com.contexto.Receita;
 import com.contexto.TipoReceita;
+
+import com.contexto.Ingrediente;
 
 public class OperacoesReceita {
 
