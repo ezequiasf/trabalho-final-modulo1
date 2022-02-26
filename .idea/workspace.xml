@@ -1,39 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62ef11c2-24e0-40ab-9a71-356e5738ec52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/out/production/com/com/com.iml" afterDir="false" />
+    <list default="true" id="62ef11c2-24e0-40ab-9a71-356e5738ec52" name="Changes" comment="Usuario">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/com/com/com.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/contexto/Ingrediente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/contexto/Ingrediente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/contexto/Receita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/contexto/Receita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/contexto/TipoReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/contexto/TipoReceita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/contexto/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/contexto/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/dao/OperacoesReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/OperacoesReceita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/dao/OperacoesUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/OperacoesUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/execucao/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/execucao/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/com/com/out/production/com/com/com.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/contexto/Ingrediente.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/contexto/Ingrediente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/contexto/Receita.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/contexto/Receita.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/contexto/TipoReceita.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/contexto/TipoReceita.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/dao/OperacoesReceita.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/dao/OperacoesReceita.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/execucao/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/execucao/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/utils/BuscaReceita.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/utils/BuscaReceita.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/utils/Criterio.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/utils/Criterio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/out/production/com/com/utils/Filtro.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/production/com/com/utils/Filtro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/utils/BuscaReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/BuscaReceita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/utils/BuscaUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/BuscaUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/utils/Criterio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/Criterio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/com/utils/Filtro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/Filtro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/contexto/Receita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/contexto/Receita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/contexto/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/contexto/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dao/OperacoesReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/OperacoesReceita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/execucao/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/execucao/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/utils/BuscaReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/BuscaReceita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/utils/BuscaUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/utils/Criterio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/Criterio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/utils/Filtro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/Filtro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +63,14 @@
       <option name="presentableId" value="Default" />
       <updated>1645800290469</updated>
     </task>
+    <task id="LOCAL-00001" summary="Usuario">
+      <created>1645830813597</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645830813597</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,5 +83,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Usuario" />
   </component>
 </project>

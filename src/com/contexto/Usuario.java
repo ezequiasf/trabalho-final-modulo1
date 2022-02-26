@@ -1,5 +1,6 @@
 package com.contexto;
-import com.dao.OperacoesUsuario;
+import com.dao.OperacoesReceita;
+
 import java.util.List;
 
 public class Usuario {
@@ -8,10 +9,16 @@ public class Usuario {
     private String nome;
     private List<Receita> receitas;
 
-    public Usuario(Integer id, String nome){
-        this.id = id;
+    public Usuario( String nome){
+
         this.nome = nome;
     }
+
+
+//    public void atribuirReceita(id){
+//        receitas = getReceitas(id);
+//
+//    }
 
     public Integer getId() {
         return id;

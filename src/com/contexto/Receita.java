@@ -31,8 +31,15 @@ public class Receita {
         this.setIngredientes(ingrediente);
     }
 
-    public List<Ingrediente> getIngredientes() {
-        return Collections.unmodifiableList(this.ingredientes);
+    public String getIngredientes() {
+        String ingResultado = "";
+
+        for (Ingrediente ing: this.ingredientes
+             ) {
+            ingResultado += ing.getNome()+"\n";
+
+        }
+        return ingResultado;
     }
 
     public String getNomeReceita() {
@@ -88,14 +95,8 @@ public class Receita {
     }
 
     private String impressaoIngredientes(){
-        String resultado="";
-        List<String> ingredientes = this.getIngredientes().stream()
-            .map(ing-> ing.toString())
-            .collect(Collectors.toList());
-        for (String ing: ingredientes){
-            resultado += ing+"\n";
-        }
-        return resultado;    
+        return this.getIngredientes();
+
     }
     @Override
     public String toString() {

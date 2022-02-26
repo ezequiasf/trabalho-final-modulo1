@@ -19,23 +19,25 @@ public class OperacoesReceita {
 
         Receita receita1 = new Receita("pao", TipoReceita.SALGADA, 2.0,"preparo",10,
             new Ingrediente("ovo", "2"),
-            new Ingrediente("farinha","1 kg"),
-            new Ingrediente("agua"," 200ml")
+            new Ingrediente("leite","1 kg"),
+            new Ingrediente("sal"," 200ml"),
+        new Ingrediente("carne"," 200ml"),
+        new Ingrediente("agua"," 200ml")
             );
         receita1.setId(id++);
-        Receita receita2 = new Receita("pao", TipoReceita.SALGADA, 2.0,"preparo",10,
-            new Ingrediente("ovo", "2"),
+        Receita receita2 = new Receita("pao", TipoReceita.DIET, 2.0,"preparo",10,
+            new Ingrediente("carne", "2"),
             new Ingrediente("farinha","1 kg"),
             new Ingrediente("agua"," 200ml")
             );
         receita2.setId(id++);
         Receita receita3 = new Receita("pao", TipoReceita.SALGADA, 2.0,"preparo",10,
-            new Ingrediente("ovo", "2"),
+            new Ingrediente("limao", "2"),
             new Ingrediente("farinha","1 kg"),
             new Ingrediente("agua"," 200ml")
             );
         receita3.setId(id++);
-        Receita receita4 = new Receita("pao", TipoReceita.SALGADA, 2.0,"preparo",10,
+        Receita receita4 = new Receita("pao", TipoReceita.DIET, 2.0,"preparo",10,
             new Ingrediente("ovo", "2"),
             new Ingrediente("farinha","1 kg"),
             new Ingrediente("agua"," 200ml")
@@ -47,7 +49,7 @@ public class OperacoesReceita {
             new Ingrediente("agua"," 200ml")
             );
         receita5.setId(id++);
-        Receita receita6 = new Receita("pao", TipoReceita.SALGADA, 2.0,"preparo",10,
+        Receita receita6 = new Receita("pao", TipoReceita.DIET, 2.0,"preparo",10,
             new Ingrediente("ovo", "2"),
             new Ingrediente("farinha","1 kg"),
             new Ingrediente("agua"," 200ml")
