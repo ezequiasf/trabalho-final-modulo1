@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="62ef11c2-24e0-40ab-9a71-356e5738ec52" name="Changes" comment="Usuario">
+    <list default="true" id="62ef11c2-24e0-40ab-9a71-356e5738ec52" name="Changes" comment="BuscaReceita">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/contexto/Receita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/contexto/Receita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/contexto/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/contexto/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dao/OperacoesReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/OperacoesReceita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/execucao/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/execucao/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/model/Ingrediente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/model/Ingrediente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/com/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/model/Ingrediente.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/com/model/Ingrediente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/utils/BuscaReceita.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/view/Tela.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/com/view/Tela.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/utils/BuscaReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/BuscaReceita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/utils/BuscaUsuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/utils/Criterio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/Criterio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/utils/Filtro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/Filtro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -29,11 +38,13 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="25beb7kZdrduuPpTfGvrwMiNd12" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -42,17 +53,35 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.execucao.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.main.Main" />
       <module name="trabalho-final-modulo1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tela" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.view.Tela" />
+      <module name="trabalho-final-modulo1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Tela" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645830813597</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="BuscaReceita">
+      <created>1645889651870</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645889651870</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,6 +122,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Usuario" />
+    <MESSAGE value="BuscaReceita" />
+    <option name="LAST_COMMIT_MESSAGE" value="BuscaReceita" />
   </component>
 </project>
