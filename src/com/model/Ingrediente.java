@@ -31,4 +31,8 @@ public class Ingrediente {
     }
 
 
+    @Override
+    public String toString() {
+        return nome;
+    }
 }

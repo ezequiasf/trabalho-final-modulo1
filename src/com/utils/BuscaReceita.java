@@ -53,17 +53,18 @@ public class BuscaReceita {
 //        return filtrar;
 //    }
 
-//    public static List<Receita> filtroLista(List<Ingrediente> ingredientes, List<Receita> lista) {
-////        return ingredientes.stream()
-////                .anyMatch(algumItem -> lista.contains(algumItem));
-//        return lista.stream()
-//                .filter( receita -> ingredientes.stream().anyMatch(algumItem -> lista.contains(algumItem)))
-//                .collect(Collectors.toList());
-////            if (ingredientes.stream()
-////                            .anyMatch(algumItem -> lista.contains(algumItem))==true);
-////                }return
-////                );
-//    }
+    public static List<Receita> filtroLista(List<Ingrediente> ingredientes, List<Receita> lista) {
+        List<Receita> filtrar = lista;
+        for(int i = 0; i<ingredientes.size();i++) {
+            String ing = String.valueOf(ingredientes.get(i));
+            filtrar = lista.stream()
+                    .filter(r -> r.getIngredientes()
+                            .contains(ing.toLowerCase())).collect(Collectors.toList());
+            System.out.println(filtrar);
+        }
+     return filtrar;
+
+    }
 
 //    public static List<Receita> filtroLista(List<Ingrediente> ingredientes, List<Receita> lista) {
 ////        return ingredientes.stream()
