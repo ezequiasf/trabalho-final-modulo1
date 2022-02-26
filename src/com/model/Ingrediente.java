@@ -9,6 +9,11 @@ public class Ingrediente {
         this.quantidade = quantidade;
     }
 
+    public Ingrediente(String nome) {
+        this.nome = nome;
+
+    }
+
     public String getNome() {
         return nome;
     }
@@ -24,4 +29,6 @@ public class Ingrediente {
     public void setQuantidade(String quantidade) {
         this.quantidade = quantidade;
     }
+
+
 }
