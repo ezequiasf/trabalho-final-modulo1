@@ -2,19 +2,20 @@ package com.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.utils.TipoReceita;
 
 import com.model.Receita;
-import com.model.TipoReceita;
 
 import com.model.Ingrediente;
 
 public class OperacoesReceita {
 
     private static int id=0;
-    private List<Receita> listaGeral;
+    private final List<Receita> listaGeral;
 
     public OperacoesReceita(){
         listaGeral = new ArrayList<>();
+        //Injeção de dados na lista geral
 
         //Receita 1
         List<Ingrediente> listaIng1 = new ArrayList<>();
@@ -64,9 +65,11 @@ public class OperacoesReceita {
         //Receita 6
         List<Ingrediente> listaIng6 = new ArrayList<>();
         listaIng6.add(new Ingrediente("leite de soja", "200ml"));
+        listaIng6.add(new Ingrediente("camarão", "350g"));
         listaIng6.add(new Ingrediente("granola", "350g"));
+        listaIng6.add(new Ingrediente("ovo", "350g"));
         Receita receita6 = new Receita("Nham Nham vegano", TipoReceita.VEGANA, 2.0
-                ,"Joga tudo dentro de um sapato e gira.",10, listaIng6
+                ,"Joga tudo dentro de um sapato e gira.",15, listaIng6
         );
         receita6.setId(id++);
 
@@ -86,7 +89,7 @@ public class OperacoesReceita {
         listaIng8.add(new Ingrediente("macarrão vegano", "300 g"));
         listaIng8.add(new Ingrediente("algum grão ruim", "200 g"));
         Receita receita8 = new Receita("Porque você é vegano?", TipoReceita.VEGANA, 1150.0
-                ,"Sei la man.",10, listaIng8
+                ,"Sei la man.",9, listaIng8
         );
         receita8.setId(id++);
 
@@ -95,7 +98,7 @@ public class OperacoesReceita {
         listaIng9.add(new Ingrediente("arroz", "200 g"));
         listaIng9.add(new Ingrediente("açucar", "100 g"));
         Receita receita9 = new Receita("Arroz doce", TipoReceita.DOCE, 3.99
-                ,"Um arroz muito doce.",10, listaIng9
+                ,"Um arroz muito doce.",18, listaIng9
         );
         receita9.setId(id++);
 
@@ -122,24 +125,26 @@ public class OperacoesReceita {
     }
     
     public boolean cadastrarReceita(Receita receita) {
-           receita.setId(id++);
-           listaGeral.add(receita);
-        return true;
+           if (receita !=null){
+               receita.setId(id++);
+               listaGeral.add(receita);
+               return true;
+           }
+        return false;
     }
 
-    public List<Receita> listaReceita() {
+    public List<Receita> listarReceitas() {
         return listaGeral;
     }
 
     public boolean atualizarReceita(Integer id,Receita receitaAtualizada) {
-        Receita receita = listaGeral.get(id);
-        receita.setNomeReceita(receitaAtualizada.getNomeReceita());
-        receita.setIngredientes(receitaAtualizada.getIngredientesList());
-        receita.setTipoReceita(receitaAtualizada.getTipoReceita());
-        receita.setMediaPreco(receitaAtualizada.getMediaPreco());
-        receita.setTempoPreparo(receitaAtualizada.getTempoPreparo());
-        receita.setModoPreparo(receitaAtualizada.getModoPreparo());
-        return true;
+            if (receitaAtualizada!=null){
+                receitaAtualizada.setId(id);
+                listaGeral.add(id,receitaAtualizada);
+                listaGeral.remove(id+1);
+                return true;
+            }
+            return false;
     }
 
     public Receita removeReceita(int id) {

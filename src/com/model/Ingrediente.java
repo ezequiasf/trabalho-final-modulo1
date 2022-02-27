@@ -11,7 +11,6 @@ public class Ingrediente {
 
     public Ingrediente(String nome) {
         this.nome = nome;
-
     }
 
     public String getNome() {
@@ -30,9 +29,4 @@ public class Ingrediente {
         this.quantidade = quantidade;
     }
 
-
-    @Override
-    public String toString() {
-        return nome;
-    }
 }

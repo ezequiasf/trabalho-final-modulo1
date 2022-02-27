@@ -1,6 +1,8 @@
-package com.model;
+package com.utils;
 
-public enum TipoReceita implements Criterio{
+import com.utils.Criterio;
+
+public enum TipoReceita implements Criterio {
     VEGANA("Vegana"),
     DIET("Diet"),
     VEGETARIANA("Vegetariana"),

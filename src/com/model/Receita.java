@@ -2,6 +2,7 @@ package com.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.utils.TipoReceita;
 
 public class Receita {
 
@@ -26,14 +27,6 @@ public class Receita {
 
     public List<Ingrediente> getIngredientesList(){
         return this.ingredientes;
-    }
-
-    public String getIngredientes() {
-        String ingResultado = "";
-        for (Ingrediente ing: this.ingredientes) {
-            ingResultado += "["+ing.getNome()+"/"+ing.getQuantidade()+"] ";
-        }
-        return ingResultado+"\n";
     }
 
     public String getNomeReceita() {
@@ -88,15 +81,19 @@ public class Receita {
         this.mediaPreco = mediaPreco;
     }
 
-    private String impressaoIngredientes(){
-        return this.getIngredientes();
-
+    public String impressaoIngredientes(){
+        String ingResultado = "";
+        for (Ingrediente ing: this.ingredientes) {
+            ingResultado += "["+ing.getNome()+"/"+ing.getQuantidade()+"] ";
+        }
+        return ingResultado+"\n";
     }
+
     @Override
     public String toString() {
-        return String.format("Id: %d | Receita: %s | Tempo de preparo: %d min | Média de preço: R$ %.2f%n" +
+        return String.format("Id: %d | Receita: %s | Tempo de preparo: %d min | Média de preço: R$ %.2f%nTipo: %s%n" +
                         "Ingredientes:%n"+ "%sModo de preparo:%n%s%n", this.getId(), this.getNomeReceita(), this.getTempoPreparo(),
-        this.getMediaPreco(),impressaoIngredientes(), this.getModoPreparo());
+        this.getMediaPreco(),this.getTipoReceita().getTipo(),this.impressaoIngredientes(), this.getModoPreparo());
     }
 
 }
