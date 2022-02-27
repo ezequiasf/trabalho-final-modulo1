@@ -5,14 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62ef11c2-24e0-40ab-9a71-356e5738ec52" name="Changes" comment="BuscaReceita">
+      <change afterPath="$PROJECT_DIR$/src/com/test/TC_BuscaReceita.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/test/TC_OperacoesReceita.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/OperacoesReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/OperacoesReceita.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/model/Criterio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/Criterio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/model/Ingrediente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/model/Ingrediente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/out/com/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/com/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/out/com/model/Ingrediente.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/com/model/Ingrediente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/model/Receita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/model/Receita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/model/TipoReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/TipoReceita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/controller/OperacoesReceita.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/exceptions/OpcaoInvalidaException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/model/Criterio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/model/Ingrediente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/model/Receita.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/model/TipoReceita.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/out/com/utils/BuscaReceita.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/out/com/view/Tela.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/out/com/view/Tela.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/out/com/view/Tela.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/utils/BuscaReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/BuscaReceita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/view/Tela.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/view/Tela.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabalho-final-modulo1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/trabalho-final-modulo1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +67,30 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/view" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/view" />
+      <recent name="$PROJECT_DIR$/src/com/utils" />
+      <recent name="$PROJECT_DIR$/src/com/test" />
+      <recent name="$PROJECT_DIR$/src/com/model" />
+      <recent name="$PROJECT_DIR$/src/com/main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/com/utils" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
