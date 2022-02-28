@@ -4,5 +4,5 @@ public interface Calculo {
 
 
 
-    Double calculoGastoEnergetico(Double altura, Double peso, Character sexo, int idade);
+    Double calculoGastoEnergetico(Double altura, Double peso, Character sexo, int idade, String atividadeFisica);
 }

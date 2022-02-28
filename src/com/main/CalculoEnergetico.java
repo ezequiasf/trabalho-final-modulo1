@@ -4,10 +4,13 @@ import com.utils.Calculo;
 
 public class CalculoEnergetico implements Calculo {
 
+
+
     @Override
-    public Double calculoGastoEnergetico(Double altura, Double peso, Character sexo, int idade) {
+    public Double calculoGastoEnergetico(Double altura, Double peso, Character sexo, int idade, String atividadeFisica) {
         Double multiplicador = 0.0;
         Double numero = 0.0;
+        Double fatorDeAtividadeFisica = 0.0;
         if (idade < 3) {
                 if(sexo.toString().equalsIgnoreCase("M")){
                     multiplicador = 59.512;
@@ -63,7 +66,15 @@ public class CalculoEnergetico implements Calculo {
                 numero = 658.5;
             }
         }
-        return  (multiplicador * peso) + numero;
+        if(atividadeFisica.equalsIgnoreCase("leve")){
+            fatorDeAtividadeFisica = 1.55;
+        }else if(atividadeFisica.equalsIgnoreCase("moderada")){
+            fatorDeAtividadeFisica = 1.85;
+        }else if(atividadeFisica.equalsIgnoreCase("intensa")){
+            fatorDeAtividadeFisica = 2.20;
+        }
+
+        return  ((multiplicador * peso) + numero)*fatorDeAtividadeFisica;
     }
 
         }
