@@ -73,7 +73,17 @@ public class TC_BuscaReceita {
 
     @Test
     public void deveTestarFiltroAlmoco (){
+        //Setup
+        OperacoesReceita or = new OperacoesReceita();
 
+        //act
+        List<Receita> lista = BuscaReceita.filtroAlmoco(or.listarReceitas(),2000.0);
+        double porcentagemCaloria = 2000*0.3;
+        //Assert
+        assertTrue(lista.stream().allMatch(r->r.getTipoRefeicao()
+                .getRefeicao().equalsIgnoreCase("Almoço ou janta")));
+//        assertTrue(lis);
+//
     }
 
 }
