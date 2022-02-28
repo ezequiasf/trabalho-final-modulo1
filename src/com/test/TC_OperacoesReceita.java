@@ -4,6 +4,7 @@ import com.controller.OperacoesReceita;
 import com.model.Ingrediente;
 import com.model.Receita;
 import com.utils.TipoReceita;
+import com.utils.TipoRefeicao;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class TC_OperacoesReceita {
         listaIng.add(new Ingrediente("arroz", "200 g"));
         listaIng.add(new Ingrediente("açucar", "100 g"));
         Receita receita = new Receita("Receita Teste"
-                , TipoReceita.DOCE,13.45, "modo teste"
+                , TipoReceita.DOCE, TipoRefeicao.ALMOCO_JANTA,300.5,13.45, "modo teste"
                 ,15, listaIng);
 
         //Act
@@ -42,7 +43,7 @@ public class TC_OperacoesReceita {
         listaIng.add(new Ingrediente("arroz", "200 g"));
         listaIng.add(new Ingrediente("açucar", "100 g"));
         Receita receita = new Receita("Receita Teste"
-                , TipoReceita.DOCE,13.45, "modo teste"
+                , TipoReceita.DOCE,TipoRefeicao.ALMOCO_JANTA,300.5,13.45, "modo teste"
                 ,15, listaIng);
 
         //act

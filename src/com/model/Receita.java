@@ -3,24 +3,29 @@ package com.model;
 import java.util.ArrayList;
 import java.util.List;
 import com.utils.TipoReceita;
+import com.utils.TipoRefeicao;
 
 public class Receita {
 
     private Integer id;
     private String nomeReceita;
     private TipoReceita tipoReceita;
+    private TipoRefeicao tipoRefeicao;
     private List<Ingrediente> ingredientes;
     private String modoPreparo;
     private Integer tempoPreparo;
     private Double mediaPreco;
+    private Double calorias;
 
-    public Receita(String nomeReceita, TipoReceita tipoReceita, Double mediaPreco,
+    public Receita(String nomeReceita, TipoReceita tipoReceita, TipoRefeicao tipoRefeicao, Double calorias, Double mediaPreco,
             String modoPreparo, Integer tempoPreparo,List<Ingrediente> ingrediente) {
         this.nomeReceita = nomeReceita;
         this.tipoReceita = tipoReceita;
+        this.tipoRefeicao = tipoRefeicao;
         this.modoPreparo = modoPreparo;
         this.tempoPreparo = tempoPreparo;
         this.mediaPreco = mediaPreco;
+        this.calorias = calorias;
         this.ingredientes = new ArrayList<>();
         this.setIngredientes(ingrediente);
     }
@@ -49,8 +54,24 @@ public class Receita {
         return tipoReceita;
     }
 
+    public TipoRefeicao getTipoRefeicao() {
+        return tipoRefeicao;
+    }
+
+    public void setTipoRefeicao(TipoRefeicao tipoRefeicao) {
+        this.tipoRefeicao = tipoRefeicao;
+    }
+
     public void setTipoReceita(TipoReceita tipoReceita) {
         this.tipoReceita = tipoReceita;
+    }
+
+    public Double getCalorias() {
+        return calorias;
+    }
+
+    public void setCalorias(Double calorias) {
+        this.calorias = calorias;
     }
 
     public void setIngredientes(List<Ingrediente> ingredientes) {
@@ -91,9 +112,9 @@ public class Receita {
 
     @Override
     public String toString() {
-        return String.format("Id: %d | Receita: %s | Tempo de preparo: %d min | Média de preço: R$ %.2f%nTipo: %s%n" +
+        return String.format("Id: %d | Receita: %s | Tempo de preparo: %d min | Média de preço: R$ %.2f%nTipo: %s | Refeição: %s | Calorias: %.2f%n" +
                         "Ingredientes:%n"+ "%sModo de preparo:%n%s%n", this.getId(), this.getNomeReceita(), this.getTempoPreparo(),
-        this.getMediaPreco(),this.getTipoReceita().getTipo(),this.impressaoIngredientes(), this.getModoPreparo());
+        this.getMediaPreco(),this.getTipoReceita().getTipo(), this.getTipoRefeicao(), getCalorias(), this.impressaoIngredientes(), this.getModoPreparo());
     }
 
 }
