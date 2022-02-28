@@ -3,6 +3,6 @@ package com.utils;
 public interface Calculo {
 
 
-    //1 - homem 2 - mulher
-    Double calculoGastoEnergetico(Double altura, Double peso, int sexo);
+
+    Double calculoGastoEnergetico(Double altura, Double peso, Character sexo, int idade, String atividadeFisica);
 }
