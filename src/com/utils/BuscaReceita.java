@@ -75,7 +75,7 @@ public class BuscaReceita {
     public static List<Receita> filtroLancheCafe(List<Receita> lista, Double calorias, int tipo) {
 
         if (tipo == 1) {
-            return filtroRefeicao(lista, calorias, 0.2, TipoRefeicao.CAFE_DA_MANHA);
+            return filtroRefeicao(lista, calorias, 0.2, TipoRefeicao.CAFE);
         } else if (tipo == -1) {
             return filtroRefeicao(lista, calorias, 0.2, TipoRefeicao.LANCHE);
         }
@@ -99,19 +99,37 @@ public class BuscaReceita {
 
         Random random = new Random();
         List<Receita> cafes = filtroLancheCafe(lista, calorias, 1);
-        Receita cafe = cafes.get(random.nextInt(cafes.size()));
+        Receita cafe = null;
+        if (!(cafes.size()<0)){
+            cafe = cafes.get(random.nextInt(cafes.size()));
+        }
 
         List<Receita> lanches = filtroLancheCafe(lista, calorias, -1);
-        Receita lanche = lanches.get(random.nextInt(lanches.size()));
+        Receita lanche = null;
+        if (!(lanches.size()<0)){
+            lanche = lanches.get(random.nextInt(lanches.size()));
+        }
 
         List<Receita> jantas = filtroAlmoco(lista, calorias);
-        Receita janta = jantas.get(random.nextInt(jantas.size()));
+        Receita janta = null;
+        if (!(jantas.size()<0)){
+            janta = jantas.get(random.nextInt(jantas.size()));
+        }
 
         List<Receita> almocos = filtroAlmoco(lista, calorias);
-        Receita almoco = almocos.get(random.nextInt(almocos.size()));
-
-        return new ArrayList<>(Arrays.asList(cafe, lanche, janta, almoco));
+        Receita almoco = null;
+        if (!(almocos.size()<0)){
+           almoco = almocos.get(random.nextInt(almocos.size()));
+        }
+        return new ArrayList<>(Arrays.asList(cafe, almoco, lanche, janta));
     }
 
-
+    public static Double totalCalorias (List<Receita> receitas){
+        return receitas.stream().mapToDouble(r-> {
+            if(r!=null){
+               return r.getCalorias();
+            }
+            return 0.0;
+        }).sum();
+    }
 }

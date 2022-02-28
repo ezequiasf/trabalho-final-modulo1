@@ -71,4 +71,9 @@ public class TC_BuscaReceita {
         assertTrue(lista.stream().allMatch(r->r.getMediaPreco()<=10.0));
     }
 
+    @Test
+    public void deveTestarFiltroAlmoco (){
+
+    }
+
 }

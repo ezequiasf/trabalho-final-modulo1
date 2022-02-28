@@ -1,6 +1,7 @@
 package com.model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.utils.TipoReceita;
 import com.utils.TipoRefeicao;
@@ -114,7 +115,7 @@ public class Receita {
     public String toString() {
         return String.format("Id: %d | Receita: %s | Tempo de preparo: %d min | Média de preço: R$ %.2f%nTipo: %s | Refeição: %s | Calorias: %.2f%n" +
                         "Ingredientes:%n"+ "%sModo de preparo:%n%s%n", this.getId(), this.getNomeReceita(), this.getTempoPreparo(),
-        this.getMediaPreco(),this.getTipoReceita().getTipo(), this.getTipoRefeicao(), getCalorias(), this.impressaoIngredientes(), this.getModoPreparo());
+        this.getMediaPreco(),this.getTipoReceita().getTipo(), this.getTipoRefeicao().getRefeicao(), getCalorias(), this.impressaoIngredientes(), this.getModoPreparo());
     }
 
 }

@@ -16,13 +16,13 @@ public class OperacoesReceita {
 
     public OperacoesReceita(){
         listaGeral = new ArrayList<>();
-        //Injeção de dados na lista geral
+    //    Injeção de dados na lista geral
 
         //Receita 1
         List<Ingrediente> listaIng1 = new ArrayList<>();
         listaIng1.add(new Ingrediente("ovo", "2 un"));
         listaIng1.add(new Ingrediente("leite", "1 l"));
-        Receita receita1 = new Receita("Omelete", TipoReceita.SALGADA, TipoRefeicao.CAFE_DA_MANHA, 300.5,10.0
+        Receita receita1 = new Receita("Omelete", TipoReceita.SALGADA, TipoRefeicao.CAFE, 300.5,10.0
                 ,"Omeletinho do pai.",10, listaIng1
             );
         receita1.setId(id++);
@@ -40,7 +40,7 @@ public class OperacoesReceita {
         List<Ingrediente> listaIng3 = new ArrayList<>();
         listaIng3.add(new Ingrediente("açucar", "100g"));
         listaIng3.add(new Ingrediente("leite condesado", "100ml"));
-        Receita receita3 = new Receita("Brigadeiro", TipoReceita.DOCE, TipoRefeicao.ALMOCO_JANTA,300.5,2.75
+        Receita receita3 = new Receita("Brigadeiro", TipoReceita.DOCE, TipoRefeicao.LANCHE,300.5,2.75
                 ,"Hum hum brigadeirinho.",10, listaIng3
         );
         receita3.setId(id++);
@@ -112,7 +112,7 @@ public class OperacoesReceita {
                 ,"Não fica muito doce.",18, listaIng10
         );
         receita10.setId(id++);
-        
+
         listaGeral.add(receita1);
         listaGeral.add(receita2);
         listaGeral.add(receita3);
