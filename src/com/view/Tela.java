@@ -6,6 +6,7 @@ import com.model.Receita;
 import com.utils.TipoReceita;
 import com.controller.OperacoesReceita;
 import com.utils.BuscaReceita;
+import com.utils.TipoRefeicao;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -126,7 +127,7 @@ public class Tela {
         System.out.println("Já estamos quase lá. Descreva sucintamente como fazer a receita:");
         String descricao = scanner.nextLine();
 
-        return new Receita(nomeReceita, tipoDaReceita, mediaPreco, descricao
+        return new Receita(nomeReceita, tipoDaReceita, TipoRefeicao.ALMOCO_JANTA, mediaPreco, descricao
                 , tempoReceita, listaIngredientes);
     }
 
