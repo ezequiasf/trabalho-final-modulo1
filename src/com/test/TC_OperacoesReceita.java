@@ -11,14 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 import static org.junit.Assert.*;
 
-/**
- * The type Tc operacoes receita.
- */
 public class TC_OperacoesReceita {
 
-    /**
-     * Deve testar cadastro lista.
-     */
     @Test
     public void deveTestarCadastroLista(){
         //Setup

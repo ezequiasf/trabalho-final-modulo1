@@ -6,7 +6,7 @@ import com.utils.TipoReceita;
 import com.utils.TipoRefeicao;
 
 /**
- * sta classe representa uma entidade Receita.
+ * Esta classe representa uma entidade Receita.
  */
 public class Receita {
 
