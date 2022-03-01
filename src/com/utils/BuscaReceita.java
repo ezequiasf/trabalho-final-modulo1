@@ -69,24 +69,25 @@ public class BuscaReceita {
     }
 
     public static List<Receita> filtroAlmoco(List<Receita> lista, Double calorias) {
-        return filtroRefeicao(lista, calorias, 0.3, TipoRefeicao.ALMOCO_JANTA);
+        return filtroRefeicao(lista, calorias, 0.3, TipoRefeicao.ALMOCO_JANTA,0.15);
     }
 
     public static List<Receita> filtroLancheCafe(List<Receita> lista, Double calorias, int tipo) {
 
         if (tipo == 1) {
-            return filtroRefeicao(lista, calorias, 0.2, TipoRefeicao.CAFE);
+            return filtroRefeicao(lista, calorias, 0.2, TipoRefeicao.CAFE,0.10);
         } else if (tipo == -1) {
-            return filtroRefeicao(lista, calorias, 0.2, TipoRefeicao.LANCHE);
+            return filtroRefeicao(lista, calorias, 0.2, TipoRefeicao.LANCHE,0.10);
         }
         return null;
     }
 
-    private static List<Receita> filtroRefeicao(List<Receita> lista, Double calorias, Double porcentagem, TipoRefeicao tipoRefeicao) {
+    private static List<Receita> filtroRefeicao(List<Receita> lista, Double calorias, Double porcentagem
+            , TipoRefeicao tipoRefeicao, Double porcentagemDelta) {
 
         List<Receita> listaGenerica = lista.stream().filter(r -> {
             if (r.getTipoRefeicao() == tipoRefeicao) {
-                if (r.getCalorias() <= calorias * porcentagem) {
+                if ((r.getCalorias()>calorias*porcentagemDelta)&&(r.getCalorias() <= calorias * porcentagem)) {
                     return true;
                 }
             }
@@ -100,25 +101,25 @@ public class BuscaReceita {
         Random random = new Random();
         List<Receita> cafes = filtroLancheCafe(lista, calorias, 1);
         Receita cafe = null;
-        if (!(cafes.size()<0)){
+        if (!(cafes.size()<=0)){
             cafe = cafes.get(random.nextInt(cafes.size()));
         }
 
         List<Receita> lanches = filtroLancheCafe(lista, calorias, -1);
         Receita lanche = null;
-        if (!(lanches.size()<0)){
+        if (!(lanches.size()<=0)){
             lanche = lanches.get(random.nextInt(lanches.size()));
         }
 
         List<Receita> jantas = filtroAlmoco(lista, calorias);
         Receita janta = null;
-        if (!(jantas.size()<0)){
+        if (!(jantas.size()<=0)){
             janta = jantas.get(random.nextInt(jantas.size()));
         }
 
         List<Receita> almocos = filtroAlmoco(lista, calorias);
         Receita almoco = null;
-        if (!(almocos.size()<0)){
+        if (!(almocos.size()<=0)){
            almoco = almocos.get(random.nextInt(almocos.size()));
         }
         return new ArrayList<>(Arrays.asList(cafe, almoco, lanche, janta));
