@@ -233,10 +233,8 @@ public class Tela {
                  */
                 if (ingredientes.length == 1) {
                     BuscaReceita.filtroLista(ingredientes[0], operacoes.listarReceitas()).forEach(System.out::println);
-                    System.out.println("Um ing");
                 } else if (ingredientes.length > 1) {
                     BuscaReceita.filtroLista(operacoes.listarReceitas(), ingredientes).forEach(System.out::println);
-                    System.out.println("dois ou mais");
                 } else {
                     resposta = -1;
                 }
@@ -369,7 +367,10 @@ public class Tela {
             } else {
                 System.out.println("Desculpe, não temos opções no momento!");
             }
-            System.out.println("Total de calorias:: " + BuscaReceita.totalCalorias(BuscaReceita.cardapioDoDia(operacoes.listarReceitas(), calorias)));
+            System.out.println("Total de calorias do cardápio:: "
+                    + BuscaReceita.
+                    totalCalorias(BuscaReceita.cardapioDoDia(operacoes.listarReceitas(), calorias))
+                    +"\nVocê deve consumir em média:: "+calorias);
         }
     }
 
