@@ -1,6 +1,6 @@
 package com.utils;
 
-public enum TipoRefeicao implements Criterio{
+public enum TipoRefeicao {
 
     CAFE ("Café da Manhã"),
     ALMOCO_JANTA("Almoço ou janta"),
