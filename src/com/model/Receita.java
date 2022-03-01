@@ -8,6 +8,7 @@ import com.utils.TipoRefeicao;
 /**
  * Esta classe representa uma entidade Receita.
  */
+//TODO: Falar sobre esta entidade de persistência.
 public class Receita {
 
     private Integer id;

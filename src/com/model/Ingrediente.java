@@ -3,6 +3,7 @@ package com.model;
 /**
  * Esta classe representa uma entidade Ingrediente.
  */
+//TODO: Falar sobre esta entidade de persistência (Funcionaria como uma tabela).
 public class Ingrediente {
     private String nome;
     private String quantidade;

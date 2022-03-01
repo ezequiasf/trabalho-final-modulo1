@@ -1,5 +1,6 @@
 package com.exceptions;
 
+//TODO: Classe para controle de exceções na Tela.
 public class OpcaoInvalidaException extends Exception{
     /**
      * Instancia uma nova Opcao invalida exception.

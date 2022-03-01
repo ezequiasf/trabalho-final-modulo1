@@ -4,6 +4,7 @@ package com.utils;
  * Esta interface provê um método que deve receber várias lógicas para o cálculo
  * calórico de alimentos que um humano a depender de vários parâmetros deve consumir.
  */
+//TODO: Falar sobre esta interface funcional e a lógica por trás do cálculo.
 @FunctionalInterface
 public interface Calculo {
     /**

@@ -7,6 +7,7 @@ import com.utils.InicializaLista;
 
 import com.model.Receita;
 
+//TODO: Classe para persistência dos dados na lista.
 public class OperacoesReceita {
 
     /**

@@ -22,6 +22,7 @@ public class Tela {
     /**
      * Neste método ocorre toda a lógica e fluxo da view.
      */
+    //TODO: Falar sobre o tratamento de erros.
     public static void telaPrincipal() {
         int respostaInicial = 0;
 
@@ -41,6 +42,7 @@ public class Tela {
                     default -> throw new OpcaoInvalidaException("Opa! Opção inválida, escolha uma das opções informadas, por gentileza.");
                 }
             } catch (InputMismatchException ex) {
+                //Unchecked Exception (Não precisaria ser tratada).
                 //Caso o que seja digitado não seja número.
                 scanner.nextLine(); //Flush
                 System.out.println("Aconteceu um erro, abortando operação...");

@@ -9,6 +9,7 @@ import com.model.Receita;
  * Esta classe utilitária serve para realizar vários filtros a partir de vários
  * critérios.
  */
+//TODO: Falar sobre o funcionamento de filtragem das receitas desta classe utilitária.
 public class BuscaReceita {
 
     /**
@@ -83,7 +84,6 @@ public class BuscaReceita {
      * @return Uma lista filtrada que tem apenas receitas com o limite de preço passado
      * como parâmetro.
      */
-// Filtro de preço: Limite de preço
     public static List<Receita> filtroLista(double preco, List<Receita> lista) {
         return lista.stream()
                 .filter(r -> r.getMediaPreco() <= preco)
