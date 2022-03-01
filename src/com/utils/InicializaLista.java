@@ -6,6 +6,9 @@ import com.model.Receita;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe utilizada para inicializar a lista geral usada nas operações.
+ */
 public class InicializaLista {
 
     public static int id = 0;

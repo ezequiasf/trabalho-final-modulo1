@@ -5,23 +5,47 @@ import java.util.stream.Collectors;
 
 import com.model.Receita;
 
+/**
+ * The type Busca receita.
+ */
 public class BuscaReceita {
 
-    //Pesquisa por um ingrediente em específico
+    /**
+     * Filtro lista list.
+     *
+     * @param ingrediente the ingrediente
+     * @param lista       the lista
+     * @return the list
+     */
+//Pesquisa por um ingrediente em específico
     public static List<Receita> filtroLista(String ingrediente, List<Receita> lista) {
         return lista.stream()
                 .filter(r -> r.impressaoIngredientes()
                         .contains(ingrediente.replace(" ", ""))).collect(Collectors.toList());
     }
 
-    //Pesquisa pelo tipo de ingrediente
+    /**
+     * Filtro lista list.
+     *
+     * @param tipo  the tipo
+     * @param lista the lista
+     * @return the list
+     */
+//Pesquisa pelo tipo de ingrediente
     public static List<Receita> filtroLista(TipoReceita tipo, List<Receita> lista) {
         return lista.stream()
                 .filter(r -> r.getTipoReceita() == tipo)
                 .collect(Collectors.toList());
     }
 
-    //Pesquisa por vários ingredientes
+    /**
+     * Filtro lista list.
+     *
+     * @param lista the lista
+     * @param ing   the ing
+     * @return the list
+     */
+//Pesquisa por vários ingredientes
     public static List<Receita> filtroLista(List<Receita> lista, String... ing) {
         List<Receita> listaFiltrada = new ArrayList<>();
         Iterator<Receita> iterador = lista.iterator();
@@ -40,14 +64,28 @@ public class BuscaReceita {
         return listaFiltrada;
     }
 
-    //Filtro de tempo: Limite de tempo
+    /**
+     * Filtro lista list.
+     *
+     * @param tempo the tempo
+     * @param lista the lista
+     * @return the list
+     */
+//Filtro de tempo: Limite de tempo
     public static List<Receita> filtroLista(int tempo, List<Receita> lista) {
         return lista.stream()
                 .filter(r -> r.getTempoPreparo() <= tempo)
                 .collect(Collectors.toList());
     }
 
-    // Filtro de preço: Limite de preço
+    /**
+     * Filtro lista list.
+     *
+     * @param preco the preco
+     * @param lista the lista
+     * @return the list
+     */
+// Filtro de preço: Limite de preço
     public static List<Receita> filtroLista(double preco, List<Receita> lista) {
         return lista.stream()
                 .filter(r -> r.getMediaPreco() <= preco)
@@ -55,7 +93,14 @@ public class BuscaReceita {
                 .collect(Collectors.toList());
     }
 
-    // Receita mais cara para mais barata ou o inverso
+    /**
+     * Lista precos list.
+     *
+     * @param sinalizador the sinalizador
+     * @param lista       the lista
+     * @return the list
+     */
+// Receita mais cara para mais barata ou o inverso
     // Negativo: crescente, Positivo: Decrescente
     public static List<Receita> listaPrecos(int sinalizador, List<Receita> lista) {
         return lista.stream()
@@ -68,10 +113,25 @@ public class BuscaReceita {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Filtro almoco list.
+     *
+     * @param lista    the lista
+     * @param calorias the calorias
+     * @return the list
+     */
     public static List<Receita> filtroAlmoco(List<Receita> lista, Double calorias) {
         return filtroRefeicao(lista, calorias, 0.3, TipoRefeicao.ALMOCO_JANTA,0.15);
     }
 
+    /**
+     * Filtro lanche cafe list.
+     *
+     * @param lista    the lista
+     * @param calorias the calorias
+     * @param tipo     the tipo
+     * @return the list
+     */
     public static List<Receita> filtroLancheCafe(List<Receita> lista, Double calorias, int tipo) {
 
         if (tipo == 1) {
@@ -85,17 +145,21 @@ public class BuscaReceita {
     private static List<Receita> filtroRefeicao(List<Receita> lista, Double calorias, Double porcentagem
             , TipoRefeicao tipoRefeicao, Double porcentagemDelta) {
 
-        List<Receita> listaGenerica = lista.stream().filter(r -> {
+        return lista.stream().filter(r -> {
             if (r.getTipoRefeicao() == tipoRefeicao) {
-                if ((r.getCalorias()>calorias*porcentagemDelta)&&(r.getCalorias() <= calorias * porcentagem)) {
-                    return true;
-                }
+                return (r.getCalorias() > calorias * porcentagemDelta) && (r.getCalorias() <= calorias * porcentagem);
             }
             return false;
         }).collect(Collectors.toList());
-        return listaGenerica;
     }
 
+    /**
+     * Cardapio do dia list.
+     *
+     * @param lista    the lista
+     * @param calorias the calorias
+     * @return the list
+     */
     public static List<Receita> cardapioDoDia(List<Receita> lista, Double calorias) {
 
         Random random = new Random();
@@ -125,6 +189,12 @@ public class BuscaReceita {
         return new ArrayList<>(Arrays.asList(cafe, almoco, lanche, janta));
     }
 
+    /**
+     * Total calorias double.
+     *
+     * @param receitas the receitas
+     * @return the double
+     */
     public static Double totalCalorias (List<Receita> receitas){
         return receitas.stream().mapToDouble(r-> {
             if(r!=null){
