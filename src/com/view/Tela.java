@@ -319,8 +319,8 @@ public class Tela {
         scanner.nextLine(); //Flush
         double calorias;
         if (respostaAtvFisica == 1) {
-            System.out.println("Como costuma ser a ocorrência das atividades? 1 - [LEVE] | 2 - " +
-                    "[MODERADA] | 3 - [INTENSO]");
+            System.out.println("Como costuma ser a ocorrência das atividades?  [LEVE] | " +
+                    "[MODERADA] |  [INTENSO]");
             String ocorrenciaAtividades = scanner.nextLine();
             CalculoEnergeticoAtividade calculoEnergeticoAtv = new CalculoEnergeticoAtividade(ocorrenciaAtividades);
             calorias = calculoEnergeticoAtv.calculoGastoEnergetico(altura, peso, sexo, idade);
