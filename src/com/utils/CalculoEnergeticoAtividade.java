@@ -3,7 +3,7 @@ package com.utils;
 /**
  *  Esta classe implementa a lógica da fórmula mais básica com
  *  o uso adicional do fator de atividade física
- *  provida pela OMS , a partir de estudos de 2004.
+ *  provida pela OMS, a partir de estudos de 2004.
  */
 //TODO: Falar sobre a implementação da forma básica com um adicional de cálculo para quem
 // faz atividade física.
