@@ -31,8 +31,7 @@ public class InicializaLista {
         Receita receita1 = new Receita("Macarrão de Panela de Pressão ", TipoReceita.SALGADA, TipoRefeicao.ALMOCO_JANTA, 283.25 ,10.0
                 ,"    Numa panela de pressão coloque o bacon e frite bem, junte e linguiça calabresa e deixe fritar também.\n" +
                 "    Adicione o alho e depois a cebola, refogue bem. Junte o cheiro-verde, a pimenta-do-reino e o orégano, mexa.\n" +
-                "    Junte o caldo de carne, o molho de tomate, o creme de leite e um pouco de água, misture bem e acerte o sal. Coloque o macarrão cru e cubra com água\n" +
-                "(até que cubra e passe 1 cm aproximadamente) e misture bem.\n" +
+                "    Junte o caldo de carne, o molho de tomate, o creme de leite e um pouco de água, misture bem e acerte o sal. Coloque o macarrão cru e cubra com água (até que cubra e passe 1 cm aproximadamente) e misture bem.\n" +
                 "    Feche a panela de pressão. Conte 3 minutos após pegar pressão. Desligue o fogo, deixe sair a pressão, abra e mexa bem.\n" +
                 "Se for necessário, deixe mais um pouco no fogo para secar, mas lembre que conforme ele esfria, ele seca naturalmente.\n" +
                 " Sirva com queijo ralado de sua preferência.",10, listaIng1 );
@@ -113,16 +112,11 @@ public class InicializaLista {
         listaIng6.add(new Ingrediente("orégano", "1 un"));
         listaIng6.add(new Ingrediente("ovo", "350g"));
         Receita receita6 = new Receita("Sanduíche de ovo especial ", TipoReceita.SALGADA, TipoRefeicao.LANCHE,190.5,2.0
-                ,"    No centro do pão, faça um buraco com forma de empadinha ou algo do tamanho.\n" +
-                "\n" +
+                ,"No centro do pão, faça um buraco com forma de empadinha ou algo do tamanho.\n" +
                 "    Em uma frigideira pequena, ponha a manteiga e deixe derreter, espalhando-a por toda frigideira.\n" +
-                "\n" +
                 "    Coloque a fatia de pão com o buraco.\n" +
-                "\n" +
                 "    Logo em seguida, ponha o ovo no buraco com sal e orégano.\n" +
-                "\n" +
                 "    Depois de algum tempo, verifique se o ovo está em consistência firme na parte debaixo do pão, vire.\n" +
-                "\n" +
                 "    Após o lado a ser virado estar em consistência firme, o sanduíche estará pronto.",15, listaIng6
         );
         receita6.setId(id++);
@@ -134,10 +128,8 @@ public class InicializaLista {
         listaIng7.add(new Ingrediente("oléo de soja", "1 colher"));
         Receita receita7 = new Receita("Delícia de tomovo", TipoReceita.SALGADA,TipoRefeicao.ALMOCO_JANTA, 230.5,15.0
                 ,"    Lave bem os tomates.\n" +
-                "    Seque-os e corte a parte superior.\n" +
-                "    Com auxílio de uma colher, vá retirando todas sementes deixando-os ocos.\n" +
-                "    Passe sal por dentro de cada tomate e coloque-os em um pirex untado com azeite.\n" +
-                "    Quebre os ovos e coloque com cuidado um em cada tomate.\n" +
+                "    Seque-os e corte a parte superior. Com auxílio de uma colher, vá retirando todas sementes deixando-os ocos.\n" +
+                "    Passe sal por dentro de cada tomate e coloque-os em um pirex untado com azeite. Quebre os ovos e coloque com cuidado um em cada tomate.\n" +
                 "    Cubra o pirex com papel alumínio e leve ao forno médio por uns 15 minutos.\n" +
                 "    Retire o papel alumínio e, se necessário for, deixe mais alguns minutos até que o ovo fique no cozimento desejado.\n" +
                 "    Sirva quente.",30, listaIng7
